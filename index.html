@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NineCloud – Your DevOps Partner</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <span class="logo-mark">9</span>
+        <span class="logo-text">NineCloud</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#tech">Tech Stack</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn--nav">Get Started</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#tech">Tech Stack</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <canvas id="gridCanvas"></canvas>
+      <div class="hero__glow hero__glow--1"></div>
+      <div class="hero__glow hero__glow--2"></div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__badge animate-in" style="--d:0.1s">
+        <span class="badge__dot"></span>
+        Trusted DevOps & Cloud Partner
+      </div>
+      <h1 class="hero__headline animate-in" style="--d:0.25s">
+        Accelerate Your<br/>
+        <span class="highlight">Cloud Journey</span><br/>
+        with Confidence
+      </h1>
+      <p class="hero__sub animate-in" style="--d:0.4s">
+        Cloud migration, Kubernetes orchestration, DevOps pipelines,<br/>
+        AI/ML infrastructure — built to scale on AWS &amp; Google Cloud.
+      </p>
+      <div class="hero__ctas animate-in" style="--d:0.55s">
+        <a href="#services" class="btn btn--primary">Explore Services</a>
+        <a href="#contact" class="btn btn--ghost">Talk to an Expert →</a>
+      </div>
+      <div class="hero__stats animate-in" style="--d:0.7s">
+        <div class="stat">
+          <span class="stat__num">99.9<em>%</em></span>
+          <span class="stat__label">Uptime SLA</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__num">150<em>+</em></span>
+          <span class="stat__label">Deployments</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__num">40<em>%</em></span>
+          <span class="stat__label">Cost Reduction</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="scroll__bar"></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee">
+      <span>AWS</span><span class="dot">·</span>
+      <span>Google Cloud</span><span class="dot">·</span>
+      <span>Kubernetes</span><span class="dot">·</span>
+      <span>Terraform</span><span class="dot">·</span>
+      <span>ArgoCD</span><span class="dot">·</span>
+      <span>Helm</span><span class="dot">·</span>
+      <span>Prometheus</span><span class="dot">·</span>
+      <span>Grafana</span><span class="dot">·</span>
+      <span>GitOps</span><span class="dot">·</span>
+      <span>CI/CD</span><span class="dot">·</span>
+      <span>Docker</span><span class="dot">·</span>
+      <span>Istio</span><span class="dot">·</span>
+      <span>AWS</span><span class="dot">·</span>
+      <span>Google Cloud</span><span class="dot">·</span>
+      <span>Kubernetes</span><span class="dot">·</span>
+      <span>Terraform</span><span class="dot">·</span>
+      <span>ArgoCD</span><span class="dot">·</span>
+      <span>Helm</span><span class="dot">·</span>
+      <span>Prometheus</span><span class="dot">·</span>
+      <span>Grafana</span><span class="dot">·</span>
+      <span>GitOps</span><span class="dot">·</span>
+      <span>CI/CD</span><span class="dot">·</span>
+      <span>Docker</span><span class="dot">·</span>
+      <span>Istio</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">What We Do</p>
+        <h2 class="section-title">End-to-End Cloud<br/>Engineering Services</h2>
+      </div>
+      <div class="services__grid">
+
+        <div class="service-card" data-index="01">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M8 32a8 8 0 1 1 2.4-15.6A12 12 0 0 1 36 20h2a6 6 0 0 1 0 12H8z" stroke="currentColor" stroke-width="2"/><path d="M24 28v8m-4-4 4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Cloud Migration</h3>
+          <p>Lift-and-shift to re-architecture — we migrate your workloads to AWS or GCP with zero downtime strategies and cost optimization built in.</p>
+          <a href="#contact" class="card__link">Learn more →</a>
+        </div>
+
+        <div class="service-card" data-index="02">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="24" r="14" stroke="currentColor" stroke-width="2" stroke-dasharray="4 3"/><path d="M24 6v4M24 38v4M6 24h4M38 24h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Kubernetes & Containers</h3>
+          <p>Production-grade Kubernetes clusters — EKS, GKE, or self-managed — with Helm, Istio service mesh, and full observability from day one.</p>
+          <a href="#contact" class="card__link">Learn more →</a>
+        </div>
+
+        <div class="service-card" data-index="03">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="14" width="36" height="6" rx="2" stroke="currentColor" stroke-width="2"/><rect x="6" y="26" width="36" height="6" rx="2" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="17" r="1.5" fill="currentColor"/><circle cx="12" cy="29" r="1.5" fill="currentColor"/><path d="M20 17h16M20 29h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>DevOps & CI/CD</h3>
+          <p>Automated pipelines with GitHub Actions, ArgoCD, and GitOps workflows. Ship faster, safer, with every commit fully traceable.</p>
+          <a href="#contact" class="card__link">Learn more →</a>
+        </div>
+
+        <div class="service-card" data-index="04">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M14 36V20l10-8 10 8v16" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><rect x="19" y="26" width="10" height="10" rx="1" stroke="currentColor" stroke-width="2"/><path d="M6 36h36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Infrastructure as Code</h3>
+          <p>Terraform and Pulumi modules for repeatable, auditable cloud infrastructure. Environments that scale without surprises.</p>
+          <a href="#contact" class="card__link">Learn more →</a>
+        </div>
+
+        <div class="service-card" data-index="05">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M10 38V18l14-8 14 8v20" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M18 38v-8h12v8" stroke="currentColor" stroke-width="2"/><path d="M24 10v6M16 22h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="34" cy="34" r="7" fill="#00d4aa22" stroke="currentColor" stroke-width="2"/><path d="M31 34l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Data Engineering</h3>
+          <p>Managed data pipelines, Spark clusters, BigQuery & Redshift optimization, and real-time streaming with Kafka and Kinesis.</p>
+          <a href="#contact" class="card__link">Learn more →</a>
+        </div>
+
+        <div class="service-card" data-index="06">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M12 36l6-12 6 6 5-10 7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="6" y="10" width="36" height="28" rx="3" stroke="currentColor" stroke-width="2"/><circle cx="36" cy="16" r="3" fill="#00d4aa44" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h3>AI & ML Infrastructure</h3>
+          <p>GPU clusters, MLflow, Vertex AI and SageMaker pipelines. We build the infrastructure so your models train faster and serve reliably.</p>
+          <a href="#contact" class="card__link">Learn more →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container about__inner">
+      <div class="about__visual">
+        <div class="about__card-stack">
+          <div class="acard acard--back">
+            <div class="acard__line"></div><div class="acard__line"></div><div class="acard__line short"></div>
+          </div>
+          <div class="acard acard--front">
+            <div class="acard__header">
+              <span class="acard__dot green"></span>
+              <span class="acard__dot yellow"></span>
+              <span class="acard__dot red"></span>
+            </div>
+            <div class="acard__code">
+              <p><span class="c-green">resource</span> <span class="c-teal">"aws_eks_cluster"</span> <span class="c-white">"prod" {</span></p>
+              <p class="indent"><span class="c-blue">name</span> = <span class="c-yellow">"nine-prod"</span></p>
+              <p class="indent"><span class="c-blue">version</span> = <span class="c-yellow">"1.29"</span></p>
+              <p class="indent"><span class="c-blue">role_arn</span> = <span class="c-teal">module.iam.eks_role</span></p>
+              <p><span class="c-white">}</span></p>
+              <p class="mt"><span class="c-green">output</span> <span class="c-teal">"endpoint"</span> <span class="c-white">{</span></p>
+              <p class="indent"><span class="c-blue">value</span> = <span class="c-teal">aws_eks_cluster</span></p>
+              <p class="indent"><span class="c-teal">.prod.endpoint</span></p>
+              <p><span class="c-white">}</span></p>
+            </div>
+            <div class="acard__footer">
+              <span class="pill pill--green">✓ Plan: 3 to add</span>
+              <span class="pill pill--blue">Terraform v1.7</span>
+            </div>
+          </div>
+          <div class="acard acard--metric">
+            <span class="metric__label">Cluster Health</span>
+            <span class="metric__value">100%</span>
+            <div class="metric__bar"><div class="metric__fill"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="about__text">
+        <p class="section-tag">Why NineCloud</p>
+        <h2 class="section-title">Engineering-First,<br/>Business-Aware</h2>
+        <p class="about__body">We're a team of cloud architects, SREs, and platform engineers who've run infrastructure at scale. We don't just consult — we build, operate, and hand over with full documentation and runbooks.</p>
+        <ul class="about__list">
+          <li>
+            <span class="list-icon">→</span>
+            <div><strong>AWS & GCP Certified Engineers</strong> on every engagement, not outsourced generalists.</div>
+          </li>
+          <li>
+            <span class="list-icon">→</span>
+            <div><strong>GitOps-native delivery</strong> — every change is reviewed, versioned, and reversible.</div>
+          </li>
+          <li>
+            <span class="list-icon">→</span>
+            <div><strong>Transparent pricing</strong> with fixed-scope engagements and no surprise retainers.</div>
+          </li>
+        </ul>
+        <a href="#contact" class="btn btn--primary">Work With Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section class="tech" id="tech">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Technology</p>
+        <h2 class="section-title">Our Core Stack</h2>
+      </div>
+      <div class="tech__grid">
+        <div class="tech-category">
+          <h4>Cloud Platforms</h4>
+          <div class="tech-tags">
+            <span>AWS</span><span>Google Cloud</span><span>Azure</span>
+          </div>
+        </div>
+        <div class="tech-category">
+          <h4>Orchestration</h4>
+          <div class="tech-tags">
+            <span>Kubernetes</span><span>Docker</span><span>Helm</span><span>Istio</span>
+          </div>
+        </div>
+        <div class="tech-category">
+          <h4>IaC & GitOps</h4>
+          <div class="tech-tags">
+            <span>Terraform</span><span>Pulumi</span><span>ArgoCD</span><span>Flux</span>
+          </div>
+        </div>
+        <div class="tech-category">
+          <h4>CI/CD</h4>
+          <div class="tech-tags">
+            <span>GitHub Actions</span><span>GitLab CI</span><span>Jenkins</span>
+          </div>
+        </div>
+        <div class="tech-category">
+          <h4>Observability</h4>
+          <div class="tech-tags">
+            <span>Prometheus</span><span>Grafana</span><span>Datadog</span><span>OpenTelemetry</span>
+          </div>
+        </div>
+        <div class="tech-category">
+          <h4>Data & AI</h4>
+          <div class="tech-tags">
+            <span>Apache Kafka</span><span>Spark</span><span>Vertex AI</span><span>SageMaker</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">How We Work</p>
+        <h2 class="section-title">From Discovery<br/>to Production</h2>
+      </div>
+      <div class="process__steps">
+        <div class="process-step">
+          <div class="step__num">01</div>
+          <h4>Discovery Call</h4>
+          <p>We audit your current infra, understand your team, and map the gaps — no fluff, just facts.</p>
+        </div>
+        <div class="process-connector"><div></div></div>
+        <div class="process-step">
+          <div class="step__num">02</div>
+          <h4>Architecture Design</h4>
+          <p>We design a target architecture tailored to your scale, compliance needs, and budget.</p>
+        </div>
+        <div class="process-connector"><div></div></div>
+        <div class="process-step">
+          <div class="step__num">03</div>
+          <h4>Build & Automate</h4>
+          <p>Hands-on implementation — IaC, pipelines, monitoring — with daily updates and shared repos.</p>
+        </div>
+        <div class="process-connector"><div></div></div>
+        <div class="process-step">
+          <div class="step__num">04</div>
+          <h4>Handover & Support</h4>
+          <p>Full documentation, team training, and optional ongoing SRE retainer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container contact__inner">
+      <div class="contact__text">
+        <p class="section-tag">Get In Touch</p>
+        <h2 class="section-title">Ready to Modernize<br/>Your Infrastructure?</h2>
+        <p>Tell us about your project. We'll get back to you within 24 hours with a short call proposal — no commitment required.</p>
+        <div class="contact__meta">
+          <div>
+            <span class="meta__icon">✉</span>
+            <span>hello@ninecloud.io</span>
+          </div>
+          <div>
+            <span class="meta__icon">⏱</span>
+            <span>Response within 24h</span>
+          </div>
+        </div>
+      </div>
+      <form class="contact__form" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="Alex Johnson" required />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="alex@company.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Company</label>
+          <input type="text" placeholder="Acme Inc." />
+        </div>
+        <div class="form-group">
+          <label>What do you need help with?</label>
+          <select>
+            <option value="">Select a service…</option>
+            <option>Cloud Migration</option>
+            <option>Kubernetes / Containers</option>
+            <option>DevOps & CI/CD</option>
+            <option>Infrastructure as Code</option>
+            <option>Data Engineering</option>
+            <option>AI / ML Infrastructure</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea rows="4" placeholder="Tell us about your current setup and goals…"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Send Message →</button>
+        <p class="form-note">No spam. No retainer traps. Just a straight conversation.</p>
+        <div class="form-success" id="formSuccess">
+          ✓ Message sent! We'll be in touch within 24 hours.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="nav__logo">
+          <span class="logo-mark">9</span>
+          <span class="logo-text">NineCloud</span>
+        </a>
+        <p>Your trusted partner for cloud migration, DevOps, Kubernetes, data engineering, and AI/ML services.</p>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <h5>Services</h5>
+          <a href="#services">Cloud Migration</a>
+          <a href="#services">Kubernetes</a>
+          <a href="#services">DevOps & CI/CD</a>
+          <a href="#services">Data Engineering</a>
+          <a href="#services">AI/ML Infra</a>
+        </div>
+        <div class="footer__col">
+          <h5>Company</h5>
+          <a href="#about">About Us</a>
+          <a href="#tech">Tech Stack</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2025 NineCloud. All rights reserved.</span>
+      <span>Built with ❤ for cloud-native teams.</span>
+    </div>
+  </footer>
+
+  <script>
+    // Sticky nav
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('nav--scrolled', window.scrollY > 50);
+    });
+
+    // Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+    mobileMenu.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileMenu.classList.remove('open');
+      });
+    });
+
+    // Intersection observer for cards
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.service-card, .tech-category, .process-step, .acard').forEach(el => observer.observe(el));
+
+    // Grid canvas
+    const canvas = document.getElementById('gridCanvas');
+    const ctx = canvas.getContext('2d');
+    function resizeCanvas() {
+      canvas.width = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight;
+      drawGrid();
+    }
+    function drawGrid() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      const step = 50;
+      ctx.strokeStyle = 'rgba(0, 212, 170, 0.06)';
+      ctx.lineWidth = 1;
+      for (let x = 0; x <= canvas.width; x += step) {
+        ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, canvas.height); ctx.stroke();
+      }
+      for (let y = 0; y <= canvas.height; y += step) {
+        ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(canvas.width, y); ctx.stroke();
+      }
+      // Dots at intersections
+      ctx.fillStyle = 'rgba(0, 212, 170, 0.15)';
+      for (let x = 0; x <= canvas.width; x += step) {
+        for (let y = 0; y <= canvas.height; y += step) {
+          ctx.beginPath(); ctx.arc(x, y, 1.5, 0, Math.PI * 2); ctx.fill();
+        }
+      }
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    // Form submit
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('formSuccess').style.display = 'block';
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
